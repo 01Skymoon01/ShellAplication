@@ -1,0 +1,14 @@
+
+::::::Erij:::::Nour::::SHELLAPPLICATION::::::::::::::::::
+
+    ::1) Lister les utilisateurs simples avec option -l
+
+    ::2) Modifier le mot de passe d'un utilisateur avec option -p + < Nom_user >
+
+    ::3) Decrypter et afficher le mot de passe d'un utilisateur
+
+    ::4) Sauvegarder le mot de passe crypté dans un fichier.txt avec option -s
+
+    ::5) Afficher ce "help" avec option -help
+
+
