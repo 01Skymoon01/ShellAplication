@@ -1,3 +1,4 @@
+#NOUR KHEDHER + ERIJ TARHOUNI
 #!/bin/bash
 
 DARKGRAY='\033[1;30m'
@@ -12,15 +13,15 @@ CYAN='\033[0;36m'
 WHITE='\033[1;37m'
 DEFAULT='\033[0m'
 
-rep=1 
 
- function pause { 
-    echo "Appuyez sur ENTER pour continuer" 
+
+ function pause {
+    echo "Appuyez sur ENTER pour continuer"
     read
-}   
-rep=1 
-while [ "$rep" -eq 1 ]; do 
-    clear 
+}
+rep=1
+while [[ $rep -eq 1 ]] ; do
+    clear
 echo -e "$LIGHTPURPLE"
 echo -e "\t\t/\___/\    _    _ __          __   /\___/\ $LIGHTPURPLE"
 echo -e "\t\t\ -.- /   | |  |  \ \        / /   \ -.- / $LIGHTPURPLE"
@@ -35,23 +36,39 @@ echo -e "\t  | [1] Lister les utilisateurs simple                  |"
 echo -e "\t  |                                                     |"
 echo -e "\t  | [2] Modifier mot de passe d'un utilisateur          |"
 echo -e "\t  |                                                     |"
-echo -e "\t  | [3]                                                 |"
+echo -e "\t  | [3] Decrypter et afficher un mot de passe d'un user |"
+# echo -e "\t  |                                                     |"
+# echo -e "\t  | [4] Enregister un mot de passe crypte d'un user     |"
 echo -e "\t  |                                                     |"
-echo -e "\t  | [4]                                                 |"
+echo -e "\t  | [4] Afficher le help                                |"
 echo -e "\t  |                                                     |"
-echo -e "\t  | [5] Afficher le help                                |"
+echo -e "\t  | [5] Quitter                                         |"
 echo -e "\t  .-----------------------------------------------------.\e[49m"
-    read choix 
-    
-    case "$choix" in 
+    read choix
+
+    case $choix in
         1) echo -e "\e[94m"
-            source simpleUser.sh ;; 
+            source simpleUser.sh
+            rep=1;;
 
- 
+
         2) echo -e "\e[36m"
-            source ModifierMotDePasseUser.sh ;; 
-        *) 
-            echo "Erreur de saisie";; 
-    esac 
-done
+            source ModifierMotDePasseUser.sh
+            rep=1;;
 
+        3) echo -e "$GREEN"
+            source Decrypter.sh
+            rep=1;;
+
+        4) echo -e "$WHITE"
+            source help.sh
+            rep=1;;
+
+        5)  clear
+         echo -e "$WHITE BYE BYE"
+          rep=0 ;;
+
+        *)
+            echo "Erreur de saisie";;
+    esac
+done
