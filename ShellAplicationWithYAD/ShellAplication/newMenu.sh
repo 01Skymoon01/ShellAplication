@@ -14,13 +14,6 @@ WHITE='\033[1;37m'
 DEFAULT='\033[0m'
 
 
-<<<<<<< HEAD
-
- function pause {
-    echo "Appuyez sur ENTER pour continuer"
-    read
-}
-=======
 function Menu {
 
 function pause {
@@ -28,7 +21,6 @@ function pause {
     read
 }
 
->>>>>>> ce403d1d4896076999fdd6f971b28b70eb1a10c2
 rep=1
 while [[ $rep -eq 1 ]] ; do
     clear
@@ -65,25 +57,6 @@ echo -e "\t  .-----------------------------------------------------.\e[49m"
         2) echo -e "\e[36m"
             source ModifierMotDePasseUser.sh
             rep=1;;
-<<<<<<< HEAD
-
-        3) echo -e "$GREEN"
-            source Decrypter.sh
-            rep=1;;
-
-        4) echo -e "$WHITE"
-            source help.sh
-            rep=1;;
-
-        5)  clear
-         echo -e "$WHITE BYE BYE"
-          rep=0 ;;
-
-        *)
-            echo "Erreur de saisie";;
-    esac
-done
-=======
 
         3) echo -e "$GREEN"
             source Decrypter.sh
@@ -129,4 +102,3 @@ if [[ $answer == "Y" || $answer == "y" ]]; then
 else
     exit
 fi
->>>>>>> ce403d1d4896076999fdd6f971b28b70eb1a10c2
