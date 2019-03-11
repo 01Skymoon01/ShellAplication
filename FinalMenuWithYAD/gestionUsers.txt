@@ -1,0 +1,8 @@
+
++_________________________Choisir une tâche_________________________+
+			
+	      [1] Lister les utilisateurs simples.
+
+	      [2] Modifier le mot de passe d'un utilisateur.
+
+	      [3] Ajouter un utilisateur.

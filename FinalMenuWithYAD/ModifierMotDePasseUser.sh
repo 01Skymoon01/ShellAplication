@@ -1,5 +1,6 @@
 #NOUR KKHEDHER
-#!/bin/bash
+!/bin/bash
+
  function pause {
     echo "Appuyez sur ENTER pour continuer"
     read
@@ -18,7 +19,6 @@ function Modifer {
     pause
 }
 clear
-
   echo -e "TAPEZ LE NOM DU USER: "
    echo -e "\033[1;37m"
     read util

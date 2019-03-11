@@ -7,7 +7,7 @@
 
     ::3) Decrypter et afficher le mot de passe d'un utilisateur
 
-    ::4) Sauvegarder le mot de passe crypté dans un fichier.txt avec option -s
+    	 ET Sauvegarder le mot de passe crypté dans un fichier.txt en ajoutant option -s
 
     ::5) Afficher ce "help" avec option -help
 

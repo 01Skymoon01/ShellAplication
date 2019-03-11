@@ -1,16 +1,5 @@
 
-<<<<<<< HEAD
-::::::Erij:::::Nour::::SHELLAP::::::::::::::::::
-
-    ::1)lister les utilisateur simple
-
-    ::2)modification d une mot de passe d un utilisateur
-
-    ::3)Decrypter et afficher un mot de passe d'un user
-
-    et vous pouvez Enregister un mot de passe crypte
-=======
-::::::Erij:::::Nour::::SHELLAPPLICATION::::::::::::::::::
+            ::::SHELLAPPLICATION::::::
 
     ::1) Lister les utilisateurs simples avec option -l
 
@@ -22,5 +11,3 @@
 
     ::5) Afficher ce "help" avec option -help
 
-
->>>>>>> ce403d1d4896076999fdd6f971b28b70eb1a10c2

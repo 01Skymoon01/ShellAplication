@@ -14,21 +14,17 @@ WHITE='\033[1;37m'
 DEFAULT='\033[0m'
 
 
-<<<<<<< HEAD
+
 
  function pause {
     echo "Appuyez sur ENTER pour continuer"
     read
 }
-=======
-function Menu {
 
-function pause {
-    echo "Appuyez sur ENTER pour continuer"
-    read
-}
 
->>>>>>> ce403d1d4896076999fdd6f971b28b70eb1a10c2
+
+
+
 rep=1
 while [[ $rep -eq 1 ]] ; do
     clear
@@ -46,13 +42,13 @@ echo -e "\t  | [1] Lister les utilisateurs simple                  |"
 echo -e "\t  |                                                     |"
 echo -e "\t  | [2] Modifier mot de passe d'un utilisateur          |"
 echo -e "\t  |                                                     |"
-echo -e "\t  | [3] Decrypter et afficher un mot de passe d'un user |"
-# echo -e "\t  |                                                     |"
-# echo -e "\t  | [4] Enregister un mot de passe crypte d'un user     |"
+echo -e "\t  | [3] Ajouter un user                                 |"
 echo -e "\t  |                                                     |"
-echo -e "\t  | [4] Afficher le help                                |"
+echo -e "\t  | [4] Decrypter et afficher un mot de passe d'un user |"
 echo -e "\t  |                                                     |"
-echo -e "\t  | [5] Quitter                                         |"
+echo -e "\t  | [5] Afficher le help                                |"
+echo -e "\t  |                                                     |"
+echo -e "\t  | [6] Quitter                                         |"
 echo -e "\t  .-----------------------------------------------------.\e[49m"
     read choix
 
@@ -65,35 +61,20 @@ echo -e "\t  .-----------------------------------------------------.\e[49m"
         2) echo -e "\e[36m"
             source ModifierMotDePasseUser.sh
             rep=1;;
-<<<<<<< HEAD
 
         3) echo -e "$GREEN"
+            source adduser.sh
+            rep=1;;
+
+        4) echo -e "$GREEN"
             source Decrypter.sh
             rep=1;;
 
-        4) echo -e "$WHITE"
+        5) echo -e "$WHITE"
             source help.sh
             rep=1;;
 
-        5)  clear
-         echo -e "$WHITE BYE BYE"
-          rep=0 ;;
-
-        *)
-            echo "Erreur de saisie";;
-    esac
-done
-=======
-
-        3) echo -e "$GREEN"
-            source Decrypter.sh
-            rep=1;;
-
-        4) echo -e "$WHITE"
-            source help.sh
-            rep=1;;
-
-        5)  clear
+        6)  clear
          echo -e "$WHITE BYE BYE"
           rep=0 ;;
 
@@ -102,31 +83,7 @@ done
     esac
 done
 
-}
 
-user=`$(id -u -n)`
 
-if [[ $1 == -l ]]; then
-    source simpleUser.sh
 
-elif [[ $1 == -p || $2 == $user ]]; then
-   source ModifierMotDePasseUser.sh
-
-elif [[ $1 == -decrypt ]]; then
-    source Decrypter.sh
-
-#elif [[ $1 == -s ]]; then
-#    source 
-
-elif [[ $1 == -help ]]; then
-    source help.sh
-fi
-
-echo "Voulez vous passez au menu? (Y/N)"
-read answer
-if [[ $answer == "Y" || $answer == "y" ]]; then
-    Menu
-else
-    exit
-fi
 >>>>>>> ce403d1d4896076999fdd6f971b28b70eb1a10c2

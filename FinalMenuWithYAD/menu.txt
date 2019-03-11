@@ -1,0 +1,16 @@
+
++---------------------[] Qu'est ce que voulez vous faire?---------------------+
+
+			[1] Lister les utilisateur simples.
+
+			[2] Modifier le mot de passe d'un utilisateur
+
+			[3] Decrypter et afficher le mot de passe d'un utilisateur
+
+			    + sauvegarder le mot de passe crypté dans un fichier.txt
+
+			[*] Afficher ce le help
+
+
+
+[..] Selectionner un chiffre...

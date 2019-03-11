@@ -1,0 +1,7 @@
+
++__________________________Choisir une tâche__________________________+
+
+		[1] Vérifier le ping.
+
+		[2] Detecter le nombre de machines connectées
+		    mon réseau Internet.
