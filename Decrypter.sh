@@ -6,11 +6,11 @@ function pause {
 }
 function Decrypter {
   if [[ $id -ge 1000 && $id -le 60000  ]]  ; then
-    sudo unshadow /etc/passwd /etc/shadow > passwd.txt
-    statment=`sudo john -show -users:$util passwd.txt | cut -d : -f2`
+    sudo unshadow /etc/passwd /etc/shadow | cut -d : -f2 > passwd.txt
+    statment=`sudo john -show -users:$util passwd.txt `
     echo "*******Le mot de passe est=> $statment"
 
-  sudo rm passwd.txt
+  #sudo rm passwd.txt
 
 #sauvegarder lesmots de passe ,
   echo "voulez vous l enregister? [o;n]"

@@ -38,36 +38,31 @@ echo -e "\t\t|_| |_|   |_|  |_|    \/  \/       |_| |_| "
 echo -e "                                  "
 echo -e "\e[35m\e[1m\t      HELLO WORLD                       HACK THE WORLD\n"
 echo -e "\t  .-----------------------------------------------------."
-echo -e "\t  | [1] Gestion utilisateurs                            |"
+echo -e "\t  | [1] Lister les utilisateurs simple                  |"
 echo -e "\t  |                                                     |"
-echo -e "\t  | [2] Decrypter et afficher un mot de passe d'un user |"
+echo -e "\t  | [2] Modifier mot de passe d'un utilisateur          |"
 echo -e "\t  |                                                     |"
-echo -e "\t  | [3] Network                                         |"
+echo -e "\t  | [3] Ajouter un user                                 |"
 echo -e "\t  |                                                     |"
-echo -e "\t  | [4] Afficher le help                                |"
-echo -e "\t  |                                                     |"
-echo -e "\t  | [5] Quitter                                         |"
+echo -e "\t  | [4] Quitter                                         |"
 echo -e "\t  .-----------------------------------------------------.\e[49m"
     read choix
 
     case $choix in
         1) echo -e "\e[94m"
-            source gestionUser.sh
+            source simpleUser.sh
             rep=1;;
 
-        2) echo -e "$GREEN"
-            source gestionDecrypter.sh
+
+        2) echo -e "\e[36m"
+            source ModifierMotDePasseUser.sh
             rep=1;;
 
-        3) echo -e "$WHITE"
-            source gestionHost.sh
+        3) echo -e "$GREEN"
+            source adduser.sh
             rep=1;;
 
-        4) echo -e "$WHITE"
-            source help.sh
-            rep=1;;
-
-        5)  clear
+        4)  clear
          echo -e "$WHITE BYE BYE"
           rep=0 ;;
 

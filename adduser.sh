@@ -5,7 +5,7 @@ function pause {
 }
 function ADDUSER {
     clear
-    sudo useradd $util
+    sudo useradd -p $password $util
 
     echo -e "+-----------------------------+\n"
     echo -e "\e[37m$util ajouter\n\n"
@@ -17,4 +17,8 @@ function ADDUSER {
 clear
 echo -e "taper le nom d utilisateur: "
 read util
+
+echo "Taper le mot de passe: "
+read password
+
 ADDUSER
