@@ -1,14 +1,30 @@
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Made by Software Eng:
+Erij tarhouni && Nour Khedher
+::::::::::::::::::::::::::SHELLAPPLICATION::::::::::::::::::::::::::::
 
-::::::Erij:::::Nour::::SHELLAPPLICATION::::::::::::::::::
+    ::1) Gestion Utilisateur
+       
+       *) Lister les utilisateurs simples avec option -l
 
-    ::1) Lister les utilisateurs simples avec option -l
+       *) Modifier le mot de passe d'un utilisateur avec option -p + < Nom_user > 
+         
+       *) Ajouter user                                 
+         
 
-    ::2) Modifier le mot de passe d'un utilisateur avec option -p + < Nom_user >
+    ::2) Decrypter et afficher le mot de passe d'un utilisateur en utilisant 2 méthodes, 
+      ET Sauvegarder le mot de passe crypté dans un fichier.txt en ajoutant option -s
 
-    ::3) Decrypter et afficher le mot de passe d'un utilisateur
+       *) John the ripper
 
-    	 ET Sauvegarder le mot de passe crypté dans un fichier.txt en ajoutant option -s
+       *) Find the hash
+    
+     ::3) Network
+        
+       *) Ping
+     
+       *) Host Connectees
 
-    ::5) Afficher ce "help" avec option -help
+     ::4) Afficher ce "help" avec option -help
 
 

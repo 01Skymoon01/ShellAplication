@@ -1,14 +1,14 @@
 function GestionUsers {
 
-	yad --window-icon="/root/git_workspace/ShellAplication/FinalMenu/icons8-hacking-64.png" \
+	yad --window-icon="/root/git_workspace/ShellAplication/FinalMenuWithYAD/icons8-hacking-64.png" \
 	--title "Gestion des utilisateurs" \
-	--image /root/git_workspace/ShellAplication/FinalMenu/users.png --image-on-top \
+	--image /root/git_workspace/ShellAplication/FinalMenuWithYAD/users.png --image-on-top \
 	--text-info --back=black --fore=white --margins=70 --width=800 --height=300 --center < gestionUsers.txt \
 	--buttons-layout=center \
-	--button=" One!/root/git_workspace/ShellAplication/FinalMenu/s1.png":1 \
-	--button=" Two!/root/git_workspace/ShellAplication/FinalMenu/s2.png":2 \
-	--button=" Three!/root/git_workspace/ShellAplication/FinalMenu/s3.png":3 \
-	--button="Return!/root/git_workspace/ShellAplication/FinalMenu/return.png":4
+	--button=" One!/root/git_workspace/ShellAplication/FinalMenuWithYAD/s1.png":1 \
+	--button=" Two!/root/git_workspace/ShellAplication/FinalMenuWithYAD/s2.png":2 \
+	--button=" Three!/root/git_workspace/ShellAplication/FinalMenuWithYAD/s3.png":3 \
+	--button="Return!/root/git_workspace/ShellAplication/FinalMenuWithYAD/return.png":4
 
 	choice=$?
 
@@ -30,14 +30,14 @@ function GestionUsers {
 }
 
 function Decryptage {
-	yad --window-icon="/root/git_workspace/ShellAplication/FinalMenu/icons8-hacking-64.png" \
-	--image /root/git_workspace/ShellAplication/FinalMenu/crypting.png --image-on-top \
+	yad --window-icon="/root/git_workspace/ShellAplication/FinalMenuWithYAD/icons8-hacking-64.png" \
+	--image /root/git_workspace/ShellAplication/FinalMenuWithYAD/crypting.png --image-on-top \
 	--title "Decryptage" \
 	--text-info --back=black --fore=white --margins=70 --width=800 --height=300 --center < decryptage.txt \
 	--buttons-layout=center \
-	--button=" One!/root/git_workspace/ShellAplication/FinalMenu/s1.png":1 \
-	--button=" Two!/root/git_workspace/ShellAplication/FinalMenu/s2.png":2 \
-	--button="Return!/root/git_workspace/ShellAplication/FinalMenu/return.png":3
+	--button=" One!/root/git_workspace/ShellAplication/FinalMenuWithYAD/s1.png":1 \
+	--button=" Two!/root/git_workspace/ShellAplication/FinalMenuWithYAD/s2.png":2 \
+	--button="Return!/root/git_workspace/ShellAplication/FinalMenuWithYAD/return.png":3
 
 	choice=$?
 
@@ -45,8 +45,9 @@ function Decryptage {
 		source Decrypter.sh
 		MenuGlobal
 
-	elif [[ $choice -eq 1 ]]; then
-		echo "ugh"
+	elif [[ $choice -eq 2 ]]; then
+	 source decrypter2.sh
+	 MenuGlobal
 
 	elif [[ $choice -eq 3 ]]; then
 		MenuGlobal
@@ -54,14 +55,14 @@ function Decryptage {
 }
 
 function GestionReseau {
-	yad --window-icon="/root/git_workspace/ShellAplication/FinalMenu/icons8-hacking-64.png" \
-	--image /root/git_workspace/ShellAplication/FinalMenu/network.png --image-on-top \
+	yad --window-icon="/root/git_workspace/ShellAplication/FinalMenuWithYAD/icons8-hacking-64.png" \
+	--image /root/git_workspace/ShellAplication/FinalMenuWithYAD/network.png --image-on-top \
 	--title "Gestion des réseaux" \
 	--text-info --back=black --fore=white --margins=70 --width=800 --height=300 --center < network.txt \
 	--buttons-layout=center \
-	--button=" One!/root/git_workspace/ShellAplication/FinalMenu/s1.png":1 \
-	--button=" Two!/root/git_workspace/ShellAplication/FinalMenu/s2.png":2 \
-	--button="Return!/root/git_workspace/ShellAplication/FinalMenu/return.png":3
+	--button=" One!/root/git_workspace/ShellAplication/FinalMenuWithYAD/s1.png":1 \
+	--button=" Two!/root/git_workspace/ShellAplication/FinalMenuWithYAD/s2.png":2 \
+	--button="Return!/root/git_workspace/ShellAplication/FinalMenuWithYAD/return.png":3
 
 	choice=$?
 
@@ -82,14 +83,14 @@ function GestionReseau {
 
 function MenuGlobal {
 	yad --width="500" --height="500" --title "SHELL APPLICATION" \
-	--window-icon="/root/git_workspace/ShellAplication/FinalMenu/icons8-hacking-64.png" \
-	--image /root/git_workspace/ShellAplication/FinalMenu/hacker.jpg --width="1024" --height="500" \
+	--window-icon="/root/git_workspace/ShellAplication/FinalMenuWithYAD/icons8-hacking-64.png" \
+	--image /root/git_workspace/ShellAplication/FinalMenuWithYAD/hacker.jpg --width="1024" --height="500" \
 	--buttons-layout=center \
-	--button="Gestion des utilisateurs!/root/git_workspace/ShellAplication/FinalMenu/users.png":1 \
-	--button="Decryptage!/root/git_workspace/ShellAplication/FinalMenu/crypting.png":2 \
-	--button="Gestion du réseau!/root/git_workspace/ShellAplication/FinalMenu/network.png":3 \
-	--button="Help!/root/git_workspace/ShellAplication/FinalMenu/help.png":4 \
-	--button="EXIST!/root/git_workspace/ShellAplication/FinalMenu/exit.png":5
+	--button="Gestion des utilisateurs!/root/git_workspace/ShellAplication/FinalMenuWithYAD/users.png":1 \
+	--button="Decryptage!/root/git_workspace/ShellAplication/FinalMenuWithYAD/crypting.png":2 \
+	--button="Gestion du réseau!/root/git_workspace/ShellAplication/FinalMenuWithYAD/network.png":3 \
+	--button="Help!/root/git_workspace/ShellAplication/FinalMenuWithYAD/help.png":4 \
+	--button="EXIST!/root/git_workspace/ShellAplication/FinalMenuWithYAD/exit.png":5
 
 choix=$?
 
@@ -115,6 +116,24 @@ if [[ $choix -eq 5 ]]; then
 	exit
 fi
 }
+#user=`$(id -u -n)`
+#user=`grep $2 /etc/passwd | cut -d: -f3`
 
-wmctrl -r 'SHELL APPLICATION'S -e '0,6,0,1000,500'
-MenuGlobal
+if [[ $1 == "" ]]; then
+	MenuGlobal
+
+elif [[ $1 == "-l" ]]; then
+    source simpleUser.sh $1
+
+elif [[ $1 == "-p" ]]; then
+   source ModifierMotDePasseUser.sh
+
+elif [[ $1 == "-decrypt" && $2 == "-s" ]]; then
+    source Decrypter.sh
+
+elif [[ $1 == "-help" ]]; then
+	source help.sh
+
+
+fi
+#wmctrl -r 'SHELL APPLICATION'S -e '0,6,0,1000,500'

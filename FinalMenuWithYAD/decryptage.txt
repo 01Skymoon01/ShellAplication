@@ -1,7 +1,7 @@
 
 +________________Choisir la méthode de decryptage________________+
-		
-		
+
+
 		[1] JOHN THE RIPPER.
-		
-		[2] .................
+
+		[2] Find The Hash. 
